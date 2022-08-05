@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap');
+:root {
+    --font: 'Lato', 'Lato', sans-serif;
+    --color-main: #000;
+    --color-text: #000;
+    --color-trans: rgba(255, 255, 255, 0.8);
+}
+
+@keyframes color {
+    0%   { background: #33CCCC; }
+    20%  { background: #33CC36; }
+    40%  { background: #B8CC33; }
+    60%  { background: #FCCA00; }
+    80%  { background: #33CC36; }
+    100% { background: #33CCCC; }
+  }
+  
+  body {
+    background: #33CCCC; /* Fallback */
+    animation: color 9s infinite linear;
+    text-align: center;
+    padding: 2em;
+  }
+  
+
+div.content { 
+    margin: auto;
+    max-width:500px;
+    padding: 10px;
+background: #fafafa;
+border-radius: 16px;
+    }
+
+
+
+ * {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #userPhoto {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 35px auto 20px;
+    border-radius: 50%;
+}
+
+#userName {
+    color: var(--color-main);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.25;
+    display: block;
+    font-family: var(--font);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+#title {
+    font-family: var(--font);
+}
+
+#footer {
+    font-family: var(--font);
+    font-size: 12px;
+    text-align: center;
+}
