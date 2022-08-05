@@ -17,7 +17,7 @@
   
   body {
     background: #33CCCC; /* Fallback */
-    animation: color 9s infinite linear;
+    animation: color 19s infinite linear;
     text-align: center;
     padding: 2em;
   }
@@ -27,8 +27,12 @@ div.content {
     margin: auto;
     max-width:500px;
     padding: 10px;
-background: #fafafa;
-border-radius: 16px;
+    background: rgba(255, 255, 255, 0.51);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.6px);
+    -webkit-backdrop-filter: blur(7.6px);
+    border: 1px solid rgba(255, 255, 255, 0.45);
     }
 
 
